@@ -1,1 +1,1 @@
-gym_anytrading
+gym_AnyTrading

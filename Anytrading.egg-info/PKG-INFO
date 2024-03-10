@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: AnyTrading
+Version: 2.0.0
+Author: mukul2345
+Author-email: mukul798348@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: gymnasium>=0.29.1
+Requires-Dist: numpy>=1.16.4
+Requires-Dist: pandas>=0.24.2
+Requires-Dist: matplotlib>=3.1.1

@@ -1,4 +1,4 @@
-# Anytrading
+# AnyTrading
 
 `AnyTrading` is a collection of [OpenAI Gym](https://github.com/openai/gym) environments for reinforcement learning-based trading algorithms.
 
@@ -11,18 +11,18 @@ TradingEnv is an abstract environment which is defined to support all kinds of t
 
 ### Via PIP
 ```bash
-pip install Anytrading
+pip install AnyTrading
 ```
 
 ### From Repository
 ```bash
-git clone https://github.com/mukul2345/Anytrading
-cd Anytrading
+git clone https://github.com/mukul2345/AnyTrading
+cd AnyTrading
 pip install -e .
 
 ## or
 
-pip install --upgrade --no-deps --force-reinstall https://github.com/mukul2345/Anytrading/archive/master.zip
+pip install --upgrade --no-deps --force-reinstall https://github.com/mukul2345/AnyTrading/archive/master.zip
 ```
 
 ## Environment Properties
@@ -120,7 +120,7 @@ Besides, you can create your own customized environment by extending TradingEnv 
 
 ```python
 import gymnasium as gym
-import Anytrading
+import AnyTrading
 
 env = gym.make('forex-v0')
 # env = gym.make('stocks-v0')
@@ -129,11 +129,11 @@ env = gym.make('forex-v0')
 - This will create the default environment. You can change any parameters such as dataset, frame_bound, etc.
 
 ### Create an environment with custom parameters
-I put two default datasets for [*FOREX*](https://github.com/mukul2345/Anytrading/blob/master/gym_anytrading/datasets/data/FOREX_EURUSD_1H_ASK.csv) and [*Stocks*](https://github.com/mukul2345/Anytrading/blob/master/gym_anytrading/datasets/data/STOCKS_GOOGL.csv) but you can use your own.
+I put two default datasets for [*FOREX*](https://github.com/mukul2345/AnyTrading/blob/master/gym_AnyTrading/datasets/data/FOREX_EURUSD_1H_ASK.csv) and [*Stocks*](https://github.com/mukul2345/AnyTrading/blob/master/gym_AnyTrading/datasets/data/STOCKS_GOOGL.csv) but you can use your own.
 
 
 ```python
-from gym_anytrading.datasets import FOREX_EURUSD_1H_ASK, STOCKS_GOOGL
+from gym_AnyTrading.datasets import FOREX_EURUSD_1H_ASK, STOCKS_GOOGL
 
 custom_env = gym.make(
     'forex-v0',
@@ -215,9 +215,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 import gymnasium as gym
-import gym_anytrading
-from gym_anytrading.envs import TradingEnv, ForexEnv, StocksEnv, Actions, Positions 
-from gym_anytrading.datasets import FOREX_EURUSD_1H_ASK, STOCKS_GOOGL
+import gym_AnyTrading
+from gym_AnyTrading.envs import TradingEnv, ForexEnv, StocksEnv, Actions, Positions 
+from gym_AnyTrading.datasets import FOREX_EURUSD_1H_ASK, STOCKS_GOOGL
 
 
 env = gym.make('forex-v0', frame_bound=(50, 100), window_size=10)
